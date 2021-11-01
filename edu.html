@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid black;
+  border-radius: 40px;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-size: 20px;
+}
+
+input[type=submit] {
+  background-color: green;
+  color: white;
+  padding: 20px 40px;
+  border: 2px solid red;
+  border-radius: 40px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: green;
+  color: yellow;
+}
+
+.container {
+  border-radius: 5px;
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 50px;
+
+}
+
+.col-25 {
+  float: left;
+  width: 100%;
+  margin-top: 10px;
+  margin-left: 60px;
+}
+
+.col-75 {
+  float: left;
+  width: 80%;
+  margin-top: 6px;
+  margin-left: 80px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body {margin:10;}
+
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: green;
+  color:yellow;
+}
+
+.main {
+  padding: 180px;
+  margin-top: 50px;
+  background-image: url("bk.jpg");
+  background-size: 100%;
+  
+}
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a>Personal And Educational Information</a>
+</div>
+
+
+<div class="main">
+    <div class="container">
+        <form action="/action_page.php">
+            <div class="row">
+                <div class="col-25">
+                  <label for="apname">Applicant Name</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="apname" name="fullname" placeholder="Your name..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="apid">ID Card Number</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="idcard" name="idnum" placeholder="XXXXX-XXXXXXX-X">
+                </div>
+              </div>
+            <div class="row">
+              <div class="col-25">
+              <label for="apldegree">Applicant Last Degree</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="ldegree" name="degree" placeholder="Your last degree name..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="rollno">Roll Number</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="rol" name="roln" placeholder="XXXXXXXX">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="totalm">Total Marks</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="tm" name="tma" placeholder="XXXX">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="obt">Obtained Marks</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="om" name="oma" placeholder="XXXX">
+            </div>
+            <div class="row">
+                <div class="col-25">
+                  <label for="per">Percentage</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="p" name="pe" placeholder="XXX">
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                <label for="cgpa">Obtained CGPA / Total GPA</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="cg" name="cgp" placeholder="X.X / X.X">
+            </div>
+          </div>
+                <div class="row">
+                    <div class="col-25">
+                      <label for="grade">Grade</label>
+                    </div>
+                    <div class="col-75">
+                      <select id="gr" name="gr">
+                        <option value="a">A</option>
+                        <option value="b">B</option>
+                        <option value="c">C</option>
+                        <option value="d">D</option>
+                        <option value="e">E</option>
+                        <option value="f">F</option>
+                      </select>
+                    </div>
+                  </div>
+                  </div>
+          <div class="row">
+            <br><input type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+</div>
+
+</body>
+</html>
