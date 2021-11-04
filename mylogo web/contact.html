@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<title> Contact me </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body class="w3-content">
+<style>
+body {
+  background-image: url('bk.jpg');
+}
+.w3-row{
+margin-top: 10px;
+margin-bottom: 10px;
+margin-left: 20px;
+margin-right: 20px;
+}
+.portfolio-btn{  
+        
+	width:190px;
+	height: 44px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color:#FFFFFF;
+	background-color: #1db096;
+	border-radius: 20px;
+	box-shadow: 4px 10px 30px rgba(24,139,119,0.2);
+}
+.portfolio-btn:hover{
+        color: black;
+	background-color: yellow;
+	transition: all ease 0.2s;
+}
+
+
+.portfolio-btn,
+.study-box a,
+.organization-box a {
+    position: center;
+    width: 190px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background: #1db096;
+    border-radius: 20px;
+    box-shadow: 4px 10px 30px rgba(24, 139, 119, 0.2);
+}
+.portfolio-btn:hover,
+.study-box a:hover,
+.organization-box a:hover{
+    background-color: yellow;
+    transition: all ease 0.2s;
+    
+}
+
+.back{
+margin-left: 380px;
+}
+.w3-section{
+text-align: left;
+}
+.w3-row{
+
+}
+</style>
+<!-- First Grid: Logo -->
+<div class="w3-row">
+  <div class="w3-full w3-black w3-container w3-center" style="height:1000px">
+    <div class="w3-padding-64">
+      <h1 style="color:yellow">CONTACT ME</h1>
+    </div>
+    
+   <div class="w3-full w3-teal w3-container" style="height:600px">
+    <div class="w3-padding-64 w3-padding-large">
+      <p class="w3-opacity">GET IN TOUCH</p>
+      <form class="w3-container w3-card w3-padding-32 w3-white" action="/action_page.php" target="_blank">
+        <div class="w3-section">
+          <label>Name</label>
+          <input class="w3-input" style="width:100%;" type="text" required name="Name">
+        </div>
+        <div class="w3-section">
+          <label>Email</label>
+          <input class="w3-input" style="width:100%;" type="text" required name="Email">
+        </div>
+        <div class="w3-section">
+          <label>Message</label>
+          <input class="w3-input" style="width:100%;" type="text" required name="Message">
+        </div>
+        <button type="submit" class="w3-button w3-teal w3-right">Send</button>
+      </form>
+    </div>
+  </div><br><br><br>
+<div class="back">
+     <a href="front.html" class="portfolio-btn">Back</a>
+     </div>
+</div>
+</body>
+</html>
